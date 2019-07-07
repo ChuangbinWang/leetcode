@@ -11,4 +11,3 @@ class Solution:
             self._gen(left + 1, right, n - 1, result + '(')
         if left > right and right < n:
             self._gen(left, right + 1, n - 1, result + ')')
-        
