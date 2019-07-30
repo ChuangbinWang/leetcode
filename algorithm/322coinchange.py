@@ -5,7 +5,7 @@ class Solution(object):
         for i in range(1, amount + 1):
             for j in coins:
                 if j <= i:
-                    dp[i] = min(dp[i], dp[i] - j + 1)
+                    dp[i] = min(dp[i], dp[i - j] + 1)
                     print(i, j, dp[i])
         if dp[amount] > amount :
             return -1 
