@@ -15,7 +15,7 @@ class Solution(object):
                         ans = min(ans, (x - lastx[y1, y2]) * (y2 - y1))
                     lastx[y1, y2] = x
         return ans if ans < float('inf') else 0
-            
+
 
 class Solution(object):
     def minAreaRect(self, points):
