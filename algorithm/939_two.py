@@ -2,7 +2,6 @@ class Solution(object):
     def minAreaRect(self, points):
         pointSet = []
         for x, y in points:
-            print(x, y)
             pointSet.append(4001 * x + y)
 
         ans = float('inf')
